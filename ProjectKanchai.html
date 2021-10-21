@@ -1,0 +1,178 @@
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+  <meta name="generator" content="Hugo 0.88.1">
+  <title>Checkout example · Bootstrap v5.1</title>
+
+  <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/checkout/">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+
+  <!-- Bootstrap core CSS -->
+<link href="/docs/5.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+  <!-- Favicons -->
+<link rel="apple-touch-icon" href="/docs/5.1/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
+<link rel="icon" href="/docs/5.1/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
+<link rel="icon" href="/docs/5.1/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
+<link rel="manifest" href="/docs/5.1/assets/img/favicons/manifest.json">
+<link rel="mask-icon" href="/docs/5.1/assets/img/favicons/safari-pinned-tab.svg" color="#7952b3">
+<link rel="icon" href="/docs/5.1/assets/img/favicons/favicon.ico">
+<meta name="theme-color" content="#7952b3">
+
+
+  <style>
+    .bd-placeholder-img {
+      font-size: 1.125rem;
+      text-anchor: middle;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      user-select: none;
+    }
+
+    .btnnobackground {
+      background-color: Transparent;
+      background-repeat:no-repeat;
+      border: none;      
+        }
+
+    @media (min-width: 768px) {
+      .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+      }
+    }
+  </style>
+
+  
+  <!-- Custom styles for this template -->
+  <link href="form-validation.css" rel="stylesheet">
+</head>
+<body>
+  
+<div class="container">
+  <main>
+    <div class="py-5 text-center">
+
+      <img class="d-block mx-auto mb-4" src="mew.gif" alt="" width="100" height="100">
+      <h2>Information about champion Gundam</h2>
+
+      <span class="lead">
+        <p id="arceus" style="display:inline"><img src="pokeballcenter.png" width="65px" /> </p>
+        <p id="celebi" style="display:inline"><img src="pokeballcenter.png" width="65px" /></p>
+        <p id="suicune" style="display:inline"><img src="pokeballcenter.png" width="65px" /></p>
+        <p id="hitokage" style="display:inline"><img src="pokeballcenter.png" width="65px" /></p>
+        <p id="lugia" style="display:inline"><img src="pokeballcenter.png" width="65px" /></p>
+        <p id="megarayquaza" style="display:inline"><img src="pokeballcenter.png" width="65px" /></p>
+
+        <br><br>
+        <!-- Ex2.3: JavaScript in an External File --> 
+        <button type="button" class="btn btn-outline-dark" onclick="arceus()">ARCEUS</button>
+        <button type="button" class="btn btn-outline-dark" onclick="celebi()"> CELEBI</button>
+        <button type="button" class="btn btn-outline-dark" onclick="suicune()">SUICUNE</button>
+        <button type="button" class="btn btn-outline-dark" onclick="hitokage()">HITOKAGE</button>
+        <button type="button" class="btn btn-outline-dark" onclick="lugia()">LUGIA</button>
+        <button type="button" class="btn btn-outline-dark" onclick="megarayquaza()">RAYQUAZA</button>
+
+      </span>
+    </div>
+
+    <div class="row g-5">
+      <div class="col-md-5 col-lg-4 order-md-last">
+        <h3 class="text-center mb-3">
+          <span class="text-center mb-4">Champion Inf<img src="pokeball.png" alt="" width="20" height="20">rmation</span>
+        </h3>
+        <img class="d-block mx-auto mb-4" src="kanchai.jpg" alt="" width="160" height="200">
+
+        <ul class="list-group mb-3">
+          <li class="list-group-item d-flex justify-content-between lh-sm">
+            <div>
+              <h6 class="my-0">ID</h6>
+              <small id="id" class="text-muted">1630901559</small>
+            </div>
+            <button class="btnnobackground" onclick="document.getElementById('id').style.fontSize='30px'"><img src="identification.png" width="35px"/></button>
+          </li>
+          <li class="list-group-item d-flex justify-content-between lh-sm">
+            <div>
+              <h6 class="my-0">Trainer Name</h6>
+              <small id="trainername"  class="text-muted">JungSuk</small>
+            </div>
+            <button class="btnnobackground" onclick="document.getElementById('trainername').style.fontSize='30px'"><img src="id-card.png" width="35px"/></button>
+          </li>
+          <li class="list-group-item d-flex justify-content-between lh-sm">
+            <div>
+              <h6 class="my-0">Name</h6>
+              <small id="name" class="text-muted">Kanchai Wongchaiya</small>
+            </div>
+            <button class="btnnobackground" onclick="document.getElementById('name').style.fontSize='30px'"><img src="man.png" width="35px"/></button>
+          </li>
+          <li class="list-group-item d-flex justify-content-between lh-sm">
+            <div>
+              <h6 class="my-0">Favorite Pokemon</h6>
+              <small id="pokeballicon" class="text-muted">Mew</small>
+            </div>
+            <button class="btnnobackground" onclick="document.getElementById('pokeballicon').style.fontSize='30px'"><img src="pokeballicon.png" width="35px"/></button>
+          </li>
+        </ul>
+      </div>
+      <div class="col-md-7 col-lg-8">
+        <h4 class="mb-3"> Your Information </h4>
+        <form class="needs-validation" novalidate="">
+          <div class="row g-3">
+            <div class="col-sm-6">
+              <label class="form-label">First name</label>
+              <input type="text" class="form-control" id="firstname" placeholder="" value="" required="">
+            </div>
+
+            <div class="col-sm-6">
+              <label class="form-label">Last name</label>
+              <input type="text" class="form-control" id="lastname" placeholder="" value="" required="">
+            </div>
+
+            <div class="col-12">
+              <label class="form-label">Student ID</label>
+              <div class="input-group has-validation">
+                <input class="form-control" id="studentid" placeholder="" required="">
+              </div>
+            </div>
+
+            <div class="col-12">
+              <label class="form-label">Phone number</label>
+              <div class="input-group has-validation">
+                <input class="form-control" id="phonenumber" placeholder="" required="">
+              </div>
+            </div>
+
+            <div class="col-12">
+              <label class="form-label">Enter Your Favorite Number (0-1000)</label>
+              <div class="input-group has-validation">
+                <input class="form-control" id="favoritenumber" placeholder="" required="">
+              </div>
+            </div>
+            
+            <button style="display: block;" class="w-100 btn btn-primary btn-lg" type="button" onclick="objForOf();"> 
+              Click to view your Pokemon
+            </button>    
+            
+            <p id="ex14-3"></p>
+
+            <button class="btnnobackground" type="button" onclick="newDoc();"> 
+              This is the perfect Pokemon for you -> <img src="pokeball.png"  width="20" >
+            </button>
+                        
+        </form>
+      </div>
+    </div>
+  </main>
+
+</div>
+
+
+  <script src="/docs/5.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  <script src="form-validation.js"></script>
+  <script src="app.js"></script>
+
+
+</body></html>
